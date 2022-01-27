@@ -27,9 +27,10 @@ const pessoaSchema = new mongoose.Schema({
         enum: ['CLIENTE', 'FORNECEDOR'] },
     status: { type: String, required: true, uppercase: true,
         enum: ['ATIVO', 'INATIVO'] },
-    endereco: [enderecoSchema],
-    telefone: [telefoneSchema],
-    email: [emailSchema]
+    observacao: { type: String },
+    enderecos: [enderecoSchema],
+    telefones: [telefoneSchema],
+    emails: [emailSchema]
 })
 
 module.exports = restful.model('Pessoa', pessoaSchema)
