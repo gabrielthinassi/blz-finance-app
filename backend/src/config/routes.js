@@ -9,4 +9,8 @@ module.exports = function(server) {
     // Rotas do Registro
     const Registro = require('../api/livroCaixa/registroService')
     Registro.register(router, '/registros')
+    
+    // Rotas de Pessoa
+    const Pessoa = require('../api/livroCaixa/pessoaService')
+    Pessoa.register(router, '/pessoas')
 }

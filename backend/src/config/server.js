@@ -12,7 +12,7 @@ server.use(allowCors)
 server.use(queryParser())
 
 server.listen(param.port, function() {
-    console.log(`BACKEND rodando na PORTA: ${param.port}.`)
+    console.log(`BACKEND do FinanceAPP rodando na PORTA: ${param.port}.`)
 })
 
 module.exports = server
